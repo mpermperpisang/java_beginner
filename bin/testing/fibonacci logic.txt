@@ -1,0 +1,75 @@
+a=1
+b=a
+c=20
+d=c-1
+e=a
+
+1
+selama 1<=19
+print 1
+a=1+1
+b=2-1
+e=2
+
+2
+selama 2<=19
+print 2
+a=2+1
+b=3-1
+e=3
+
+3
+selama 3<=19
+print 3
+a=3+2
+b=5-2
+e=4
+
+4
+selama 4<=19
+print 5
+a=5+3
+b=8-3
+e=5
+
+5
+selama 5<=19
+print 8
+a=8+5
+b=13-5
+e=6
+
+6
+selama 6<=19
+print 13
+a=13+8
+b=21-8
+e=7
+
+7
+selama 7<=19
+print 21
+a=21+13
+b=34-13
+e=8
+
+8
+selama 8<=19
+print 34
+a=34+21
+b=55-21
+e=9
+
+9
+selama 9<=19
+print 55
+a=55+34
+b=89-34
+e=10
+
+10
+selama 10<=19
+print 89
+a=89+55
+b=144-55
+e=11
