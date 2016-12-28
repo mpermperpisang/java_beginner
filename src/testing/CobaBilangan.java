@@ -38,6 +38,14 @@ public class CobaBilangan {
 		}
 	}
 	
+	public void genap (int angka){
+		for (i=1;i<=angka;i++){
+			if(i % 2==0){
+				System.out.print(i+" ");
+			}
+		}
+	}
+	
 	public void call_rekursif_ganjil(int angka){
 		CobaBilangan bilangan=new CobaBilangan();
 		for (i=1;i<=angka;i++){
@@ -58,19 +66,12 @@ public class CobaBilangan {
 		return string;
 	}
 	
-	public void genap (int angka){
+	public void call_rekursif_genap(int angka){
+		CobaBilangan bilangan=new CobaBilangan();
 		for (i=1;i<=angka;i++){
 			if(i % 2==0){
-				System.out.print(i+" ");
-			}
-		}
-	}
-	
-	public void call_rekursif_genap(int angka){
-		for(i=1;i<=angka;i++){
-			if(i % 2==0){
 				a=1;
-				System.out.print(i+" ");
+				System.out.print(bilangan.rekursif_genap(i+" "));
 			}
 			else{
 				a=0;
