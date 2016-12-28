@@ -1,7 +1,7 @@
 package testing;
 
 public class CobaBilangan {
-	int i,j;
+	int i,j,a;
 	
 	public void fibonacci(int angka) {
 		int a = 1;
@@ -38,6 +38,26 @@ public class CobaBilangan {
 		}
 	}
 	
+	public void call_rekursif_ganjil(int angka){
+		CobaBilangan bilangan=new CobaBilangan();
+		for (i=1;i<=angka;i++){
+			if(i % 2==1){
+				a=1;
+				System.out.print(bilangan.rekursif_ganjil(i+" "));
+			}
+			else{
+				a=0;
+			}
+		}
+	}
+	
+	public String rekursif_ganjil(String string){
+		if(a==1){
+			return rekursif_ganjil(string);
+		}
+		return string;
+	}
+	
 	public void genap (int angka){
 		for (i=1;i<=angka;i++){
 			if(i % 2==0){
@@ -45,31 +65,50 @@ public class CobaBilangan {
 			}
 		}
 	}
+	
+	public void call_rekursif_genap(int angka){
+		for(i=1;i<=angka;i++){
+			if(i % 2==0){
+				a=1;
+				System.out.print(i+" ");
+			}
+			else{
+				a=0;
+			}
+		}
+	}
+	
+	public String rekursif_genap(String string){
+		if(a==1){
+			return rekursif_genap(string);
+		}
+		return string;
+	}
 
 	public boolean kelipatantiga(int angka) {
 		i=1;
 		while(i<=angka){
 			if(i % 3==0){
-			System.out.print(i+" ");
+				System.out.print(i+" ");
 			}	
 			i++;
 		}
 		return false;
 	}
 	
-	public void call_rekursif(int angka){
+	public void call_rekursif_fibonacci(int angka){
 		CobaBilangan bilangan = new CobaBilangan();
 		for (i=1;i<=angka;i++){
-        	System.out.println(bilangan.rekursif(i));
+        	System.out.println(bilangan.rekursif_fibonacci(i));
         }
 	}
 	
-	public int rekursif(int i){
+	public int rekursif_fibonacci(int i){
 		if(i==1 || i==0){
 			return i;
 		}
 		else {
-			return rekursif(i-2)+rekursif(i-1);
+			return rekursif_fibonacci(i-2)+rekursif_fibonacci(i-1);
 		}
 	}
 }

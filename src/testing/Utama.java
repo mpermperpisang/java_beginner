@@ -9,14 +9,18 @@ public class Utama {
 
 		System.out.print("Bilangan ganjil : ");
 		bilangan.ganjil(20);
+		System.out.print("\nBilangan Ganjil Rekursif : ");
+		bilangan.call_rekursif_ganjil(20);
 		System.out.print("\nBilangan genap : ");
 		bilangan.genap(20);
+		System.out.print("\nBilangan Genap Rekursif : ");
+		bilangan.call_rekursif_genap(20);
 		System.out.print("\nBilangan prima : ");
 		bilangan.prima(20);
 		System.out.print("\nDeret Fibonacci : \n");
 		bilangan.fibonacci(10);
 		System.out.print("\nFibonacci Rekursif : \n");
-		bilangan.call_rekursif(10);
+		bilangan.call_rekursif_fibonacci(10);
 		System.out.print("\nBilangan Kelipatan Tiga : ");
 		bilangan.kelipatantiga(20);
 		System.out.print("\nPiramida Bintang Rata Kiri : \n");
