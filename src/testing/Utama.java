@@ -15,7 +15,6 @@ public class Utama {
 		bilangan.genap(10);
 		System.out.print("\nBilangan Genap Rekursif : \n");
 		bilangan.call_rekursif_genap(10);
-		/*
 		System.out.print("\nBilangan prima : ");
 		bilangan.prima(20);
 		System.out.print("\nDeret Fibonacci : \n");
@@ -52,6 +51,5 @@ public class Utama {
 		jumlah.jumlah_genap();
 		jumlah.jumlah_ganjil();
 		//jumlah.aritmatika();
-		 */
 	}
 }

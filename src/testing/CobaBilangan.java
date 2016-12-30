@@ -209,6 +209,6 @@ public class CobaBilangan {
                 }
             }
             System.out.print(angka[i]+" ");
-        }     
+        }
 	}
 }
