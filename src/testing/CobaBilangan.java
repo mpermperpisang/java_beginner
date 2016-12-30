@@ -3,6 +3,15 @@ package testing;
 public class CobaBilangan {
 	int i,j,a,b,k;
 	
+	public void bilangan_deret(int angka){
+		for(i=1;i<=angka;i++){
+			for(j=1;j<=i;j++){
+				System.out.print(j);
+			}
+			System.out.print("\n");
+		}
+	}
+	
 	public void faktorial(int angka){
 		i=angka;
 		a=1;

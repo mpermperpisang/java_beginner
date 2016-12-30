@@ -3,6 +3,22 @@ package testing;
 public class CobaBintang {
 	int i,j;
 	
+	public void trapesium(int jumlah){
+		CobaBintang bintang=new CobaBintang();
+		for(i=1;i<=jumlah;i++){
+			for(j=jumlah;j>i;j--){
+				System.out.print(" ");
+			}
+			for(j=1;j<=i;j++){
+				System.out.print(bintang.bintang("a"));
+			}
+			for(j=1;j<=i;j++){
+				System.out.print(bintang.bintang("a"));
+			}
+			System.out.print("\n");
+		}
+	}
+	
 	public void pyramidebintang_alignleft(int jumlah){
 		CobaBintang bintang=new CobaBintang();
 		for(i=1;i<=jumlah;i++){
@@ -270,6 +286,28 @@ public class CobaBintang {
 			}
 			for(j=1;j<=jumlah;j++){
 				System.out.print(bintang.pagar("a"));
+			}
+			System.out.print("\n");
+		}
+	}
+	
+	public void bintang_fullpanah(int jumlah){
+		CobaBintang bintang=new CobaBintang();
+		for(i=1;i<=jumlah;i++){
+			for(j=1;j<i;j++){
+				System.out.print(bintang.bintang("a"));
+			}
+			for(j=1;j<=i;j++){
+				System.out.print(bintang.bintang("a"));
+			}
+			System.out.print("\n");
+		}	
+		for(i=jumlah-1;i>=1;i--){
+			for(j=1;j<i;j++){
+				System.out.print(bintang.bintang("a"));
+			}
+			for(j=1;j<=i;j++){
+				System.out.print(bintang.bintang("a"));
 			}
 			System.out.print("\n");
 		}

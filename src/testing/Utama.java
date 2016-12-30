@@ -34,6 +34,9 @@ public class Utama {
 		bilangan.sorting_ascending(angka); 
 		System.out.print("\nSorting Descending : ");
 		bilangan.sorting_descending(angka); 
+		System.out.print("\nBilangan Deret : \n");
+		bilangan.bilangan_deret(5); 
+//============================================================================================================================================================================
 		System.out.print("\nPiramida Bintang Rata Kiri : \n");
 		bintang.pyramidebintang_alignleft(5);
 		System.out.print("\nPiramida Pagar Rata Kiri : \n");
@@ -66,8 +69,15 @@ public class Utama {
 		bintang.bintang_panah(5);
 		System.out.print("\nPagar Panah : \n");	
 		bintang.pagar_panah(5);
+		System.out.print("\nPagar Full Panah : \n");	
+		bintang.bintang_fullpanah(5);
+		System.out.print("\nBintang Trapesium : \n");	
+		bintang.trapesium(5);
+//============================================================================================================================================================================
 		jumlah.jumlah_genap();
 		jumlah.jumlah_ganjil();
+		jumlah.tabel_perkalian(5);
+		jumlah.piramida_jumlah(5);
 		//jumlah.aritmatika();
 	}
 }

@@ -9,6 +9,48 @@ public class CobaJumlah {
 	private Scanner reader;
 	private Scanner input;
 	
+	public void tabel_perkalian(int jumlah){
+		System.out.print("\nTabel Perkalian : \n");
+		for(i=1;i<=jumlah;i++){
+			for(j=1;j<=jumlah;j++){
+				System.out.print(i*j);
+				System.out.print(" ");
+			}
+			System.out.print("\n");
+		}		
+	}
+	
+	public void piramida_jumlah(int jumlah){
+		System.out.print("\nPiramida Jumlah : ");
+		for(i=0;i<=jumlah;i++){
+			for(j=jumlah;j>i;j--){
+				System.out.print(" ");
+			}
+			for(j=0;j<=i;j++){
+				a=i-j;
+				if(a==0){
+					System.out.print("");
+				}
+				else{
+					System.out.print(a);
+				}
+			}
+			for(j=i;j>=0;j--){
+				a=i-j;
+				if(a==0 || a==1){
+					System.out.print("");
+				}
+				else{
+					System.out.print(a);
+				}
+			}
+			for(j=jumlah;j>i;j--){
+				System.out.print(" ");
+			}
+			System.out.print("\n");
+		}		
+	}
+	
 	public void jumlah_genap(){
 		CobaBilangan bilangan = new CobaBilangan();
 		System.out.print("\nBilangan Genap : ");
