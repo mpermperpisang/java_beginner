@@ -7,7 +7,6 @@ public class Utama {
 		CobaBintang bintang = new CobaBintang();
 		CobaJumlah jumlah = new CobaJumlah();
 
-		/*
 		System.out.print("Bilangan ganjil : ");
 		bilangan.ganjil(10);
 		System.out.print("\nBilangan Ganjil Rekursif : \n");
@@ -35,7 +34,6 @@ public class Utama {
 		bilangan.sorting_ascending(angka); 
 		System.out.print("\nSorting Descending : ");
 		bilangan.sorting_descending(angka); 
-		*/
 		System.out.print("\nPiramida Bintang Rata Kiri : \n");
 		bintang.pyramidebintang_alignleft(5);
 		System.out.print("\nPiramida Pagar Rata Kiri : \n");
@@ -68,10 +66,8 @@ public class Utama {
 		bintang.bintang_panah(5);
 		System.out.print("\nPagar Panah : \n");	
 		bintang.pagar_panah(5);
-		/*
 		jumlah.jumlah_genap();
 		jumlah.jumlah_ganjil();
 		//jumlah.aritmatika();
-		 */
 	}
 }
