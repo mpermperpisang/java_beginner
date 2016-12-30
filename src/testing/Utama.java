@@ -8,13 +8,14 @@ public class Utama {
 		CobaJumlah jumlah = new CobaJumlah();
 
 		System.out.print("Bilangan ganjil : ");
-		bilangan.ganjil(20);
-		System.out.print("\nBilangan Ganjil Rekursif : ");
-		bilangan.call_rekursif_ganjil(20);
+		bilangan.ganjil(10);
+		System.out.print("\nBilangan Ganjil Rekursif : \n");
+		bilangan.call_rekursif_ganjil(10);
 		System.out.print("\nBilangan genap : ");
-		bilangan.genap(20);
-		System.out.print("\nBilangan Genap Rekursif : ");
-		bilangan.call_rekursif_genap(20);
+		bilangan.genap(10);
+		System.out.print("\nBilangan Genap Rekursif : \n");
+		bilangan.call_rekursif_genap(10);
+		/*
 		System.out.print("\nBilangan prima : ");
 		bilangan.prima(20);
 		System.out.print("\nDeret Fibonacci : \n");
@@ -51,5 +52,6 @@ public class Utama {
 		jumlah.jumlah_genap();
 		jumlah.jumlah_ganjil();
 		//jumlah.aritmatika();
+		 */
 	}
 }

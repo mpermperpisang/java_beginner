@@ -60,6 +60,7 @@ public class CobaBilangan {
 		}
 	}
 	
+	/*
 	public void call_rekursif_ganjil(int angka){
 		CobaBilangan bilangan=new CobaBilangan();
 		for (i=1;i<=angka;i++){
@@ -79,7 +80,26 @@ public class CobaBilangan {
 		}
 		return string;
 	}
+	*/
 	
+	public void call_rekursif_ganjil(int angka){
+		CobaBilangan bilangan=new CobaBilangan();
+		for (i=1;i<=angka;i++){
+        	System.out.println(bilangan.rekursif_ganjil(i));
+		}
+	}
+	
+	public int rekursif_ganjil(int i){
+		if(i == 1){
+			return 1;
+		}
+		else{
+			return rekursif_ganjil(i-1) + 2;
+		}
+		
+	}
+	
+	/*
 	public void call_rekursif_genap(int angka){
 		CobaBilangan bilangan=new CobaBilangan();
 		for (i=1;i<=angka;i++){
@@ -98,6 +118,24 @@ public class CobaBilangan {
 			return rekursif_genap(string);
 		}
 		return string;
+	}
+	*/
+	
+	public void call_rekursif_genap(int angka){
+		CobaBilangan bilangan=new CobaBilangan();
+		for (i=1;i<=angka;i++){
+        	System.out.println(bilangan.rekursif_genap(i));
+		}
+	}
+	
+	public int rekursif_genap(int i){
+		if(i == 1){
+			return 0;
+		}
+		else{
+			return rekursif_genap(i-1)+2;
+		}
+		
 	}
 
 	public boolean kelipatantiga(int angka) {
