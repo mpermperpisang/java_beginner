@@ -149,6 +149,22 @@ public class CobaBilangan {
 		return false;
 	}
 	
+	public void call_rekursif_kelipatantiga(int angka){
+		CobaBilangan bilangan=new CobaBilangan();
+		for(i=1;i<=angka;i++){
+			System.out.println(bilangan.rekursif_kelipatantiga(i));
+		}
+	}
+	
+	public int rekursif_kelipatantiga(int i){
+		if(i==1){
+			return 3;
+		}
+		else{
+			return rekursif_kelipatantiga(i-1)+3;
+		}
+	}
+	
 	public void call_rekursif_fibonacci(int angka){
 		CobaBilangan bilangan = new CobaBilangan();
 		for (i=1;i<=angka;i++){

@@ -23,6 +23,8 @@ public class Utama {
 		bilangan.call_rekursif_fibonacci(10);
 		System.out.print("\nBilangan Kelipatan Tiga : ");
 		bilangan.kelipatantiga(20);
+		System.out.print("\nKelipatan Tiga Rekursif : \n");
+		bilangan.call_rekursif_kelipatantiga(10);
 		System.out.print("\nBilangan faktorial : ");
 		bilangan.faktorial(5);
 		System.out.print("\nMean : ");
