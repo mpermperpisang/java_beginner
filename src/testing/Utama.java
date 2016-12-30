@@ -23,6 +23,15 @@ public class Utama {
 		bilangan.call_rekursif_fibonacci(10);
 		System.out.print("\nBilangan Kelipatan Tiga : ");
 		bilangan.kelipatantiga(20);
+		System.out.print("\nBilangan faktorial : ");
+		bilangan.faktorial(5);
+		System.out.print("\nMean : ");
+		bilangan.mean(1,6,10);
+		int[] angka = bilangan.sorting(7, 4, 9);
+		System.out.print("\nSorting Ascending : ");
+		bilangan.sorting_ascending(angka); 
+		System.out.print("\nSorting Descending : ");
+		bilangan.sorting_descending(angka); 
 		System.out.print("\nPiramida Bintang Rata Kiri : \n");
 		bintang.pyramide_alignleft(5);
 		System.out.print("\nPiramida Bintang Rata Kanan : \n");

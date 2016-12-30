@@ -1,11 +1,25 @@
 package testing;
 
 public class CobaBilangan {
-	int i,j,a;
+	int i,j,a,b,k;
+	
+	public void faktorial(int angka){
+		i=angka;
+		a=1;
+		while(i>=1){
+			System.out.print(i);
+			if(i>1){
+				System.out.print("*");
+			}
+			a=a*i;
+			i--;
+		}
+		System.out.print(" = "+a);
+	}
 	
 	public void fibonacci(int angka) {
-		int a = 1;
-		int b = a;
+		a = 1;
+		b = a;
 		System.out.println(a);
 		for(i=a;i<angka;i++){
 			System.out.println(a);
@@ -16,7 +30,7 @@ public class CobaBilangan {
 
 	public void prima(int angka){
         for (i = 1; i <= angka; i++) {					
-            int k = 0;									
+            k = 0;									
             for (j = 2; j <= i; j++) {					
                 if (i % j == 0) {						
                     if (i != j) {
@@ -111,5 +125,52 @@ public class CobaBilangan {
 		else {
 			return rekursif_fibonacci(i-2)+rekursif_fibonacci(i-1);
 		}
+	}
+	
+	public void mean(int i,int j,int k){
+		System.out.print("("+i+" + "+j+" + "+k+") / 3 = ");
+		double z=(i+j+k)/3.0;
+        System.out.printf("%.2f",z);
+	}
+
+	public int[] sorting(int i,int j, int k) {
+        int [] angka;
+        angka = new int[3];
+        angka[0]=i;
+        angka[1]=j;
+        angka[2]=k;
+		return angka;
+	}
+	
+	public void sorting_ascending(int angka[]){
+		CobaBilangan bilangan=new CobaBilangan();
+		bilangan.sorting(a,b,k);
+        for (i=0 ; i<angka.length ;i++){
+            int temp = angka[i];
+            for (j=i ; j<angka.length ; j++){
+            	if (angka[j] <= angka[i]){
+            		angka [i] = angka [j];
+                    angka[j] = temp;
+                    temp = angka[i];
+                }
+            }
+            System.out.print(angka[i]+" ");
+        }     
+	}
+	
+	public void sorting_descending(int angka[]){
+		CobaBilangan bilangan=new CobaBilangan();
+		bilangan.sorting(a,b,k);
+        for (i=angka.length-1 ; i>=0 ;i--){
+            int temp = angka[i];
+            for (j=angka.length-1 ; j>=i ; j--){
+            	if (angka[j] <= angka[i]){
+            		angka [i] = angka [j];
+                    angka[j] = temp;
+                    temp = angka[i];
+                }
+            }
+            System.out.print(angka[i]+" ");
+        }     
 	}
 }
