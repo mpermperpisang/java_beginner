@@ -69,8 +69,10 @@ public class Utama {
 		bintang.bintang_panah(5);
 		System.out.print("\nPagar Panah : \n");	
 		bintang.pagar_panah(5);
-		System.out.print("\nPagar Full Panah : \n");	
+		System.out.print("\nBintang Full Panah : \n");	
 		bintang.bintang_fullpanah(5);
+		System.out.print("\nPagar Full Panah : \n");	
+		bintang.pagar_fullpanah(5);
 		System.out.print("\nBintang Trapesium : \n");	
 		bintang.trapesium(5);
 //============================================================================================================================================================================

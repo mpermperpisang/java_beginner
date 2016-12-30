@@ -296,8 +296,9 @@ public class CobaBintang {
 		for(i=1;i<=jumlah;i++){
 			for(j=1;j<i;j++){
 				System.out.print(bintang.bintang("a"));
+				System.out.print(" ");
 			}
-			for(j=1;j<=i;j++){
+			for(j=1;j<=1;j++){
 				System.out.print(bintang.bintang("a"));
 			}
 			System.out.print("\n");
@@ -305,9 +306,34 @@ public class CobaBintang {
 		for(i=jumlah-1;i>=1;i--){
 			for(j=1;j<i;j++){
 				System.out.print(bintang.bintang("a"));
+				System.out.print(" ");
 			}
-			for(j=1;j<=i;j++){
+			for(j=1;j<=1;j++){
 				System.out.print(bintang.bintang("a"));
+			}
+			System.out.print("\n");
+		}
+	}
+	
+	public void pagar_fullpanah(int jumlah){
+		CobaBintang bintang=new CobaBintang();
+		for(i=1;i<=jumlah;i++){
+			for(j=1;j<i;j++){
+				System.out.print(bintang.pagar("a"));
+				System.out.print(" ");
+			}
+			for(j=1;j<=1;j++){
+				System.out.print(bintang.pagar("a"));
+			}
+			System.out.print("\n");
+		}	
+		for(i=jumlah-1;i>=1;i--){
+			for(j=1;j<i;j++){
+				System.out.print(bintang.pagar("a"));
+				System.out.print(" ");
+			}
+			for(j=1;j<=1;j++){
+				System.out.print(bintang.pagar("a"));
 			}
 			System.out.print("\n");
 		}
