@@ -7,6 +7,7 @@ public class Utama {
 		CobaBintang bintang = new CobaBintang();
 		CobaJumlah jumlah = new CobaJumlah();
 
+		/*
 		System.out.print("Bilangan ganjil : ");
 		bilangan.ganjil(10);
 		System.out.print("\nBilangan Ganjil Rekursif : \n");
@@ -34,24 +35,43 @@ public class Utama {
 		bilangan.sorting_ascending(angka); 
 		System.out.print("\nSorting Descending : ");
 		bilangan.sorting_descending(angka); 
+		*/
 		System.out.print("\nPiramida Bintang Rata Kiri : \n");
-		bintang.pyramide_alignleft(5);
+		bintang.pyramidebintang_alignleft(5);
+		System.out.print("\nPiramida Pagar Rata Kiri : \n");
+		bintang.pyramidepagar_alignleft(5);
 		System.out.print("\nPiramida Bintang Rata Kanan : \n");
-		bintang.pyramide_alignright(5);
+		bintang.pyramidebintang_alignright(5);
+		System.out.print("\nPiramida Pagar Rata Kanan : \n");
+		bintang.pyramidepagar_alignright(5);
 		System.out.print("\nPiramida Bintang Rata Tengah : \n");
-		bintang.pyramide_aligncenter(5);
+		bintang.pyramidebintang_aligncenter(5);
+		System.out.print("\nPiramida Pagar Rata Tengah : \n");
+		bintang.pyramidepagar_aligncenter(5);
 		System.out.print("\nPiramida Bintang Terbalik : \n");
-		bintang.pyramide_terbalik(5);
+		bintang.pyramidebintang_terbalik(5);
+		System.out.print("\nPiramida Pagar Terbalik : \n");
+		bintang.pyramidepagar_terbalik(5);
 		System.out.print("\nPiramida Bintang Bolong : \n");
-		bintang.pyramide_bolong(5);
+		bintang.pyramidebintang_bolong(5);
+		System.out.print("\nPiramida Pagar Bolong : \n");
+		bintang.pyramidepagar_bolong(5);
 		System.out.print("\nBintang Kotak : \n");
 		bintang.bintang_kotak(5);
-		System.out.print("\nPyramide Diamond : \n");
-		bintang.pyramide_diamond();
+		System.out.print("\nPagar Kotak : \n");
+		bintang.pagar_kotak(5);
+		System.out.print("\nPyramide Bintang Diamond : \n");
+		bintang.pyramidebintang_diamond();
+		System.out.print("\nPyramide Pagar Diamond : \n");
+		bintang.pyramidepagar_diamond();
 		System.out.print("\nBintang Panah : \n");	
 		bintang.bintang_panah(5);
+		System.out.print("\nPagar Panah : \n");	
+		bintang.pagar_panah(5);
+		/*
 		jumlah.jumlah_genap();
 		jumlah.jumlah_ganjil();
 		//jumlah.aritmatika();
+		 */
 	}
 }
